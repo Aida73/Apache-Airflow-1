@@ -1,0 +1,29 @@
+[2024-01-04T00:01:23.286+0100] {processor.py:157} INFO - Started process (PID=98923) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py
+[2024-01-04T00:01:23.293+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py for tasks to queue
+[2024-01-04T00:01:23.293+0100] {logging_mixin.py:154} INFO - [2024-01-04T00:01:23.293+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py
+[2024-01-04T00:01:24.318+0100] {processor.py:839} INFO - DAG(s) dict_keys(['dag_with_minio_aws_s3_v01']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py
+[2024-01-04T00:01:26.058+0100] {logging_mixin.py:154} INFO - [2024-01-04T00:01:26.057+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T00:01:26.181+0100] {logging_mixin.py:154} INFO - [2024-01-04T00:01:26.181+0100] {dag.py:3722} INFO - Setting next_dagrun for dag_with_minio_aws_s3_v01 to 2022-10-07T00:00:00+00:00, run_after=2022-10-08T00:00:00+00:00
+[2024-01-04T00:01:26.310+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py took 3.026 seconds
+[2024-01-04T00:07:59.185+0100] {processor.py:157} INFO - Started process (PID=99160) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py
+[2024-01-04T00:07:59.195+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py for tasks to queue
+[2024-01-04T00:07:59.198+0100] {logging_mixin.py:154} INFO - [2024-01-04T00:07:59.197+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py
+[2024-01-04T00:08:00.078+0100] {processor.py:839} INFO - DAG(s) dict_keys(['dag_with_minio_aws_s3_v01']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py
+[2024-01-04T00:08:01.698+0100] {logging_mixin.py:154} INFO - [2024-01-04T00:08:01.697+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T00:08:01.886+0100] {logging_mixin.py:154} INFO - [2024-01-04T00:08:01.884+0100] {dag.py:3722} INFO - Setting next_dagrun for dag_with_minio_aws_s3_v01 to 2022-10-08T00:00:00+00:00, run_after=2022-10-09T00:00:00+00:00
+[2024-01-04T00:08:02.047+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py took 2.864 seconds
+[2024-01-04T00:12:15.685+0100] {processor.py:157} INFO - Started process (PID=99397) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py
+[2024-01-04T00:12:15.692+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py for tasks to queue
+[2024-01-04T00:12:15.694+0100] {logging_mixin.py:154} INFO - [2024-01-04T00:12:15.693+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py
+[2024-01-04T00:12:16.468+0100] {processor.py:839} INFO - DAG(s) dict_keys(['dag_with_minio_aws_s3_v01']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py
+[2024-01-04T00:12:20.457+0100] {logging_mixin.py:154} INFO - [2024-01-04T00:12:20.457+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T00:12:20.571+0100] {logging_mixin.py:154} INFO - [2024-01-04T00:12:20.571+0100] {dag.py:2963} INFO - Creating ORM DAG for dag_with_minio_aws_s3_v01
+[2024-01-04T00:12:20.673+0100] {logging_mixin.py:154} INFO - [2024-01-04T00:12:20.673+0100] {dag.py:3722} INFO - Setting next_dagrun for dag_with_minio_aws_s3_v01 to 2022-10-03T00:00:00+00:00, run_after=2022-10-04T00:00:00+00:00
+[2024-01-04T00:12:20.706+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py took 5.022 seconds
+[2024-01-04T00:15:03.003+0100] {processor.py:157} INFO - Started process (PID=99584) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py
+[2024-01-04T00:15:03.010+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py for tasks to queue
+[2024-01-04T00:15:03.011+0100] {logging_mixin.py:154} INFO - [2024-01-04T00:15:03.011+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py
+[2024-01-04T00:15:04.233+0100] {processor.py:839} INFO - DAG(s) dict_keys(['dag_with_minio_aws_s3_v01']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py
+[2024-01-04T00:15:05.749+0100] {logging_mixin.py:154} INFO - [2024-01-04T00:15:05.748+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2024-01-04T00:15:05.821+0100] {logging_mixin.py:154} INFO - [2024-01-04T00:15:05.821+0100] {dag.py:3722} INFO - Setting next_dagrun for dag_with_minio_aws_s3_v01 to 2022-10-03T00:00:00+00:00, run_after=2022-10-04T00:00:00+00:00
+[2024-01-04T00:15:06.055+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py took 3.054 seconds

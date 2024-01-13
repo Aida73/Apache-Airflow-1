@@ -1,0 +1,51 @@
+[2024-01-02T21:47:52.841+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_minio_aws_s3_v01.task1 scheduled__2022-10-03T00:00:00+00:00 [queued]>
+[2024-01-02T21:47:52.847+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_minio_aws_s3_v01.task1 scheduled__2022-10-03T00:00:00+00:00 [queued]>
+[2024-01-02T21:47:52.848+0100] {taskinstance.py:1361} INFO - Starting attempt 2 of 6
+[2024-01-02T21:47:52.861+0100] {taskinstance.py:1382} INFO - Executing <Task(S3KeySensor): task1> on 2022-10-03 00:00:00+00:00
+[2024-01-02T21:47:52.864+0100] {standard_task_runner.py:57} INFO - Started process 89237 to run task
+[2024-01-02T21:47:52.871+0100] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'dag_with_minio_aws_s3_v01', 'task1', 'scheduled__2022-10-03T00:00:00+00:00', '--job-id', '15162', '--raw', '--subdir', '/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py', '--cfg-path', '/var/folders/gn/cr4yj18d1tv34pkws9v_kq1r0000gn/T/tmp0ykepw95']
+[2024-01-02T21:47:52.874+0100] {standard_task_runner.py:85} INFO - Job 15162: Subtask task1
+[2024-01-02T21:47:52.922+0100] {task_command.py:416} INFO - Running <TaskInstance: dag_with_minio_aws_s3_v01.task1 scheduled__2022-10-03T00:00:00+00:00 [running]> on host macbook-pro-de-user.local
+[2024-01-02T21:47:53.706+0100] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='aida' AIRFLOW_CTX_DAG_ID='dag_with_minio_aws_s3_v01' AIRFLOW_CTX_TASK_ID='task1' AIRFLOW_CTX_EXECUTION_DATE='2022-10-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-10-03T00:00:00+00:00'
+[2024-01-02T21:47:53.708+0100] {s3.py:106} INFO - Poking for key : s3://airflow/data.csv
+[2024-01-02T21:47:53.714+0100] {base.py:73} INFO - Using connection ID 'minio_conn' for task execution.
+[2024-01-02T21:47:53.715+0100] {connection_wrapper.py:378} INFO - AWS Connection (conn_id='minio_conn', conn_type='aws') credentials retrieved from login and password.
+[2024-01-02T21:47:53.721+0100] {logging_mixin.py:154} WARNING - <string>:9 AirflowProviderDeprecationWarning: extra['host'] is deprecated and will be removed in a future release. Please set extra['endpoint_url'] instead
+[2024-01-02T21:50:39.310+0100] {process_utils.py:131} INFO - Sending 15 to group 89237. PIDs of all processes in the group: [89237]
+[2024-01-02T21:50:39.338+0100] {process_utils.py:86} INFO - Sending the signal 15 to group 89237
+[2024-01-02T21:50:45.645+0100] {taskinstance.py:1149} INFO - Dependencies not met for <TaskInstance: dag_with_minio_aws_s3_v01.task1 scheduled__2022-10-03T00:00:00+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2024-01-02T21:50:45.645+0100] {taskinstance.py:1149} INFO - Dependencies not met for <TaskInstance: dag_with_minio_aws_s3_v01.task1 scheduled__2022-10-03T00:00:00+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2024-01-02T21:50:45.651+0100] {local_task_job_runner.py:154} INFO - Task is not able to be run
+[2024-01-03T00:01:43.887+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_minio_aws_s3_v01.task1 scheduled__2022-10-03T00:00:00+00:00 [queued]>
+[2024-01-03T00:01:43.981+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_minio_aws_s3_v01.task1 scheduled__2022-10-03T00:00:00+00:00 [queued]>
+[2024-01-03T00:01:43.981+0100] {taskinstance.py:1361} INFO - Starting attempt 2 of 6
+[2024-01-03T00:01:44.012+0100] {taskinstance.py:1382} INFO - Executing <Task(S3KeySensor): task1> on 2022-10-03 00:00:00+00:00
+[2024-01-03T00:01:44.017+0100] {standard_task_runner.py:57} INFO - Started process 93833 to run task
+[2024-01-03T00:01:44.025+0100] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'dag_with_minio_aws_s3_v01', 'task1', 'scheduled__2022-10-03T00:00:00+00:00', '--job-id', '15211', '--raw', '--subdir', '/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py', '--cfg-path', '/var/folders/gn/cr4yj18d1tv34pkws9v_kq1r0000gn/T/tmptwxk8p3y']
+[2024-01-03T00:01:44.029+0100] {standard_task_runner.py:85} INFO - Job 15211: Subtask task1
+[2024-01-03T00:01:44.120+0100] {task_command.py:416} INFO - Running <TaskInstance: dag_with_minio_aws_s3_v01.task1 scheduled__2022-10-03T00:00:00+00:00 [running]> on host macbook-pro-de-user.local
+[2024-01-03T00:01:47.858+0100] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='aida' AIRFLOW_CTX_DAG_ID='dag_with_minio_aws_s3_v01' AIRFLOW_CTX_TASK_ID='task1' AIRFLOW_CTX_EXECUTION_DATE='2022-10-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-10-03T00:00:00+00:00'
+[2024-01-03T00:01:47.859+0100] {s3.py:106} INFO - Poking for key : s3://airflow/data.csv
+[2024-01-03T00:01:47.874+0100] {base.py:73} INFO - Using connection ID 'minio_conn' for task execution.
+[2024-01-03T00:01:47.876+0100] {connection_wrapper.py:378} INFO - AWS Connection (conn_id='minio_conn', conn_type='aws') credentials retrieved from login and password.
+[2024-01-03T00:09:21.881+0100] {local_task_job_runner.py:294} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2024-01-03T00:09:21.952+0100] {process_utils.py:131} INFO - Sending 15 to group 93833. PIDs of all processes in the group: [93833]
+[2024-01-03T00:09:21.953+0100] {process_utils.py:86} INFO - Sending the signal 15 to group 93833
+[2024-01-03T00:10:21.986+0100] {process_utils.py:149} WARNING - process psutil.Process(pid=93833, name='Python', status='running', started='00:01:44') did not respond to SIGTERM. Trying SIGKILL
+[2024-01-03T00:10:22.079+0100] {process_utils.py:86} INFO - Sending the signal 9 to group 93833
+[2024-01-03T00:10:22.134+0100] {process_utils.py:79} INFO - Process psutil.Process(pid=93833, name='Python', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='00:01:44') (93833) terminated with exit code -9
+[2024-01-03T00:10:22.144+0100] {standard_task_runner.py:172} ERROR - Job 15211 was killed before it finished (likely due to running out of memory)
+[2024-01-04T01:20:25.768+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_minio_aws_s3_v01.task1 scheduled__2022-10-03T00:00:00+00:00 [queued]>
+[2024-01-04T01:20:25.785+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_minio_aws_s3_v01.task1 scheduled__2022-10-03T00:00:00+00:00 [queued]>
+[2024-01-04T01:20:25.786+0100] {taskinstance.py:1361} INFO - Starting attempt 2 of 6
+[2024-01-04T01:20:25.899+0100] {taskinstance.py:1382} INFO - Executing <Task(S3KeySensor): task1> on 2022-10-03 00:00:00+00:00
+[2024-01-04T01:20:25.906+0100] {standard_task_runner.py:57} INFO - Started process 1338 to run task
+[2024-01-04T01:20:25.915+0100] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'dag_with_minio_aws_s3_v01', 'task1', 'scheduled__2022-10-03T00:00:00+00:00', '--job-id', '15259', '--raw', '--subdir', '/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py', '--cfg-path', '/var/folders/gn/cr4yj18d1tv34pkws9v_kq1r0000gn/T/tmpv0zg_94o']
+[2024-01-04T01:20:25.920+0100] {standard_task_runner.py:85} INFO - Job 15259: Subtask task1
+[2024-01-04T01:20:26.301+0100] {task_command.py:416} INFO - Running <TaskInstance: dag_with_minio_aws_s3_v01.task1 scheduled__2022-10-03T00:00:00+00:00 [running]> on host macbook-pro-de-user.local
+[2024-01-04T01:20:31.595+0100] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='aida' AIRFLOW_CTX_DAG_ID='dag_with_minio_aws_s3_v01' AIRFLOW_CTX_TASK_ID='task1' AIRFLOW_CTX_EXECUTION_DATE='2022-10-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-10-03T00:00:00+00:00'
+[2024-01-04T01:20:31.599+0100] {s3.py:106} INFO - Poking for key : s3://airflow/data.csv
+[2024-01-04T01:20:31.620+0100] {base.py:73} INFO - Using connection ID 'minio_conn' for task execution.
+[2024-01-04T01:20:31.688+0100] {connection_wrapper.py:378} INFO - AWS Connection (conn_id='minio_conn', conn_type='aws') credentials retrieved from login and password.
+[2024-01-04T01:21:05.102+0100] {process_utils.py:131} INFO - Sending 15 to group 1338. PIDs of all processes in the group: [1338]
+[2024-01-04T01:21:05.115+0100] {process_utils.py:86} INFO - Sending the signal 15 to group 1338

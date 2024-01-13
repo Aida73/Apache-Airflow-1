@@ -1,0 +1,22 @@
+[2023-12-28T16:53:09.807+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: first_dag_with_python_operator_v01.our_greet_function_v01 scheduled__2023-01-05T00:00:00+00:00 [queued]>
+[2023-12-28T16:53:09.815+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: first_dag_with_python_operator_v01.our_greet_function_v01 scheduled__2023-01-05T00:00:00+00:00 [queued]>
+[2023-12-28T16:53:09.815+0100] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-28T16:53:09.828+0100] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): our_greet_function_v01> on 2023-01-05 00:00:00+00:00
+[2023-12-28T16:53:09.830+0100] {standard_task_runner.py:57} INFO - Started process 62021 to run task
+[2023-12-28T16:53:09.838+0100] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'first_dag_with_python_operator_v01', 'our_greet_function_v01', 'scheduled__2023-01-05T00:00:00+00:00', '--job-id', '606', '--raw', '--subdir', '/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/first_dag_with_python_operator.py', '--cfg-path', '/var/folders/gn/cr4yj18d1tv34pkws9v_kq1r0000gn/T/tmpv8a0k4wn']
+[2023-12-28T16:53:09.841+0100] {standard_task_runner.py:85} INFO - Job 606: Subtask our_greet_function_v01
+[2023-12-28T16:53:09.905+0100] {task_command.py:416} INFO - Running <TaskInstance: first_dag_with_python_operator_v01.our_greet_function_v01 scheduled__2023-01-05T00:00:00+00:00 [running]> on host macbook-pro-de-user.local
+[2023-12-28T16:53:10.532+0100] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='aidasow' AIRFLOW_CTX_DAG_ID='first_dag_with_python_operator_v01' AIRFLOW_CTX_TASK_ID='our_greet_function_v01' AIRFLOW_CTX_EXECUTION_DATE='2023-01-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-05T00:00:00+00:00'
+[2023-12-28T16:53:10.533+0100] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: greet() missing 2 required positional arguments: 'name' and 'age'
+[2023-12-28T16:53:10.538+0100] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=first_dag_with_python_operator_v01, task_id=our_greet_function_v01, execution_date=20230105T000000, start_date=20231228T155309, end_date=20231228T155310
+[2023-12-28T16:53:10.547+0100] {standard_task_runner.py:104} ERROR - Failed to execute job 606 for task our_greet_function_v01 (greet() missing 2 required positional arguments: 'name' and 'age'; 62021)
+[2023-12-28T16:53:10.562+0100] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-28T16:53:10.579+0100] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

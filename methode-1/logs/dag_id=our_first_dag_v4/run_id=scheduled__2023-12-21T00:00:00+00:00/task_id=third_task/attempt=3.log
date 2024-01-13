@@ -1,0 +1,23 @@
+[2024-01-01T21:38:32.870+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: our_first_dag_v4.third_task scheduled__2023-12-21T00:00:00+00:00 [queued]>
+[2024-01-01T21:38:32.881+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: our_first_dag_v4.third_task scheduled__2023-12-21T00:00:00+00:00 [queued]>
+[2024-01-01T21:38:32.881+0100] {taskinstance.py:1361} INFO - Starting attempt 3 of 6
+[2024-01-01T21:38:32.894+0100] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): third_task> on 2023-12-21 00:00:00+00:00
+[2024-01-01T21:38:32.897+0100] {standard_task_runner.py:57} INFO - Started process 2278 to run task
+[2024-01-01T21:38:32.903+0100] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'our_first_dag_v4', 'third_task', 'scheduled__2023-12-21T00:00:00+00:00', '--job-id', '13687', '--raw', '--subdir', '/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py', '--cfg-path', '/var/folders/gn/cr4yj18d1tv34pkws9v_kq1r0000gn/T/tmp0_oyknfs']
+[2024-01-01T21:38:32.907+0100] {standard_task_runner.py:85} INFO - Job 13687: Subtask third_task
+[2024-01-01T21:38:32.967+0100] {task_command.py:416} INFO - Running <TaskInstance: our_first_dag_v4.third_task scheduled__2023-12-21T00:00:00+00:00 [running]> on host macbook-pro-de-user.local
+[2024-01-01T21:38:33.502+0100] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='aida' AIRFLOW_CTX_DAG_ID='our_first_dag_v4' AIRFLOW_CTX_TASK_ID='third_task' AIRFLOW_CTX_EXECUTION_DATE='2023-12-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-21T00:00:00+00:00'
+[2024-01-01T21:38:33.504+0100] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/gn/cr4yj18d1tv34pkws9v_kq1r0000gn/T
+[2024-01-01T21:38:33.505+0100] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'I am task 3 and I will be running after the task 2!']
+[2024-01-01T21:38:33.514+0100] {subprocess.py:86} INFO - Output:
+[2024-01-01T21:38:33.517+0100] {subprocess.py:93} INFO - /bin/bash: I: command not found
+[2024-01-01T21:38:33.517+0100] {subprocess.py:97} INFO - Command exited with return code 127
+[2024-01-01T21:38:33.527+0100] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2024-01-01T21:38:33.531+0100] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=our_first_dag_v4, task_id=third_task, execution_date=20231221T000000, start_date=20240101T203832, end_date=20240101T203833
+[2024-01-01T21:38:33.543+0100] {standard_task_runner.py:104} ERROR - Failed to execute job 13687 for task third_task (Bash command failed. The command returned a non-zero exit code 127.; 2278)
+[2024-01-01T21:38:33.563+0100] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-01-01T21:38:33.578+0100] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

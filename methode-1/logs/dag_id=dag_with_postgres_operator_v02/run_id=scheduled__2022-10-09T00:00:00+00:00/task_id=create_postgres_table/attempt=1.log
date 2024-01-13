@@ -1,0 +1,39 @@
+[2024-01-02T20:19:24.218+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_postgres_operator_v02.create_postgres_table scheduled__2022-10-09T00:00:00+00:00 [queued]>
+[2024-01-02T20:19:24.226+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_postgres_operator_v02.create_postgres_table scheduled__2022-10-09T00:00:00+00:00 [queued]>
+[2024-01-02T20:19:24.226+0100] {taskinstance.py:1361} INFO - Starting attempt 1 of 6
+[2024-01-02T20:19:24.243+0100] {taskinstance.py:1382} INFO - Executing <Task(PostgresOperator): create_postgres_table> on 2022-10-09 00:00:00+00:00
+[2024-01-02T20:19:24.246+0100] {standard_task_runner.py:57} INFO - Started process 54001 to run task
+[2024-01-02T20:19:24.253+0100] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'dag_with_postgres_operator_v02', 'create_postgres_table', 'scheduled__2022-10-09T00:00:00+00:00', '--job-id', '14091', '--raw', '--subdir', '/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_with_postgres.py', '--cfg-path', '/var/folders/gn/cr4yj18d1tv34pkws9v_kq1r0000gn/T/tmpkvxjlvfc']
+[2024-01-02T20:19:24.256+0100] {standard_task_runner.py:85} INFO - Job 14091: Subtask create_postgres_table
+[2024-01-02T20:19:24.307+0100] {task_command.py:416} INFO - Running <TaskInstance: dag_with_postgres_operator_v02.create_postgres_table scheduled__2022-10-09T00:00:00+00:00 [running]> on host macbook-pro-de-user.local
+[2024-01-02T20:19:24.858+0100] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='aida' AIRFLOW_CTX_DAG_ID='dag_with_postgres_operator_v02' AIRFLOW_CTX_TASK_ID='create_postgres_table' AIRFLOW_CTX_EXECUTION_DATE='2022-10-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-10-09T00:00:00+00:00'
+[2024-01-02T20:19:24.859+0100] {sql.py:274} INFO - Executing: 
+            create table if not exists dag_runs(
+            dt date,
+            dag_id character varying,
+            primary key (dt, dag_id)
+            )
+        
+[2024-01-02T20:19:24.865+0100] {base.py:73} INFO - Using connection ID '***_localhost' for task execution.
+[2024-01-02T20:19:25.048+0100] {base.py:73} INFO - Using connection ID '***_localhost' for task execution.
+[2024-01-02T20:19:25.073+0100] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/providers/common/sql/operators/sql.py", line 280, in execute
+    output = hook.run(
+             ^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/providers/common/sql/hooks/sql.py", line 385, in run
+    with closing(self.get_conn()) as conn:
+                 ^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/providers/postgres/hooks/postgres.py", line 158, in get_conn
+    self.conn = psycopg2.connect(**conn_args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "***"
+
+[2024-01-02T20:19:25.078+0100] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_with_***_operator_v02, task_id=create_***_table, execution_date=20221009T000000, start_date=20240102T191924, end_date=20240102T191925
+[2024-01-02T20:19:25.089+0100] {standard_task_runner.py:104} ERROR - Failed to execute job 14091 for task create_***_table (connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "***"
+; 54001)
+[2024-01-02T20:19:25.129+0100] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-01-02T20:19:25.146+0100] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

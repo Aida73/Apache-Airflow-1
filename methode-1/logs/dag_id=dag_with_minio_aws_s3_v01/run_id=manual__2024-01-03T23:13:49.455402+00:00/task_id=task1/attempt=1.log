@@ -1,0 +1,107 @@
+[2024-01-04T01:16:47.026+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_minio_aws_s3_v01.task1 manual__2024-01-03T23:13:49.455402+00:00 [queued]>
+[2024-01-04T01:16:47.043+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_minio_aws_s3_v01.task1 manual__2024-01-03T23:13:49.455402+00:00 [queued]>
+[2024-01-04T01:16:47.043+0100] {taskinstance.py:1361} INFO - Starting attempt 1 of 6
+[2024-01-04T01:16:47.228+0100] {taskinstance.py:1382} INFO - Executing <Task(S3KeySensor): task1> on 2024-01-03 23:13:49.455402+00:00
+[2024-01-04T01:16:47.234+0100] {standard_task_runner.py:57} INFO - Started process 1136 to run task
+[2024-01-04T01:16:47.246+0100] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'dag_with_minio_aws_s3_v01', 'task1', 'manual__2024-01-03T23:13:49.455402+00:00', '--job-id', '15251', '--raw', '--subdir', '/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py', '--cfg-path', '/var/folders/gn/cr4yj18d1tv34pkws9v_kq1r0000gn/T/tmpicdkkbvc']
+[2024-01-04T01:16:47.252+0100] {standard_task_runner.py:85} INFO - Job 15251: Subtask task1
+[2024-01-04T01:16:47.512+0100] {task_command.py:416} INFO - Running <TaskInstance: dag_with_minio_aws_s3_v01.task1 manual__2024-01-03T23:13:49.455402+00:00 [running]> on host macbook-pro-de-user.local
+[2024-01-04T01:16:51.774+0100] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='aida' AIRFLOW_CTX_DAG_ID='dag_with_minio_aws_s3_v01' AIRFLOW_CTX_TASK_ID='task1' AIRFLOW_CTX_EXECUTION_DATE='2024-01-03T23:13:49.455402+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-03T23:13:49.455402+00:00'
+[2024-01-04T01:16:51.777+0100] {s3.py:106} INFO - Poking for key : s3://airflow/data.csv
+[2024-01-04T01:16:51.881+0100] {base.py:73} INFO - Using connection ID 'minio_conn' for task execution.
+[2024-01-04T01:16:51.882+0100] {connection_wrapper.py:378} INFO - AWS Connection (conn_id='minio_conn', conn_type='aws') credentials retrieved from login and password.
+[2024-01-04T01:17:00.462+0100] {process_utils.py:131} INFO - Sending 15 to group 1136. PIDs of all processes in the group: [1136]
+[2024-01-04T01:17:00.469+0100] {process_utils.py:86} INFO - Sending the signal 15 to group 1136
+[2024-01-04T01:17:00.471+0100] {taskinstance.py:1632} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-01-04T01:17:00.777+0100] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/providers/amazon/aws/sensors/s3.py", line 144, in execute
+    super().execute(context)
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/sensors/base.py", line 257, in execute
+    raise e
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/sensors/base.py", line 239, in execute
+    poke_return = self.poke(context)
+                  ^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/providers/amazon/aws/sensors/s3.py", line 137, in poke
+    return self._check_key(self.bucket_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/providers/amazon/aws/sensors/s3.py", line 125, in _check_key
+    obj = self.hook.head_object(key, bucket_name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 135, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 89, in wrapper
+    return func(*bound_args.args, **bound_args.kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/providers/amazon/aws/hooks/s3.py", line 885, in head_object
+    return self.get_conn().head_object(Bucket=bucket_name, Key=key)
+           ^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 747, in get_conn
+    return self.conn
+           ^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/functools.py", line 1001, in __get__
+    val = self.func(instance)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 704, in conn
+    return self.get_client_type(region_name=self.region_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py", line 674, in get_client_type
+    return session.client(
+           ^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/boto3/session.py", line 299, in client
+    return self._session.create_client(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/botocore/session.py", line 997, in create_client
+    client = client_creator.create_client(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/botocore/client.py", line 134, in create_client
+    endpoints_ruleset_data = self._load_service_endpoints_ruleset(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/botocore/client.py", line 242, in _load_service_endpoints_ruleset
+    return self._loader.load_service_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/botocore/loaders.py", line 142, in _wrapper
+    data = func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/botocore/loaders.py", line 417, in load_service_model
+    model = self.load_data(full_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/botocore/loaders.py", line 471, in load_data
+    data, _ = self.load_data_with_path(name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/botocore/loaders.py", line 142, in _wrapper
+    data = func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/botocore/loaders.py", line 448, in load_data_with_path
+    found = self.file_loader.load_file(possible_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/botocore/loaders.py", line 194, in load_file
+    data = self._load_file(file_path + ext, open_method)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/botocore/loaders.py", line 178, in _load_file
+    payload = fp.read().decode('utf-8')
+              ^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/gzip.py", line 301, in read
+    return self._buffer.read(size)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/_compression.py", line 118, in readall
+    while data := self.read(sys.maxsize):
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/gzip.py", line 499, in read
+    if not self._read_gzip_header():
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/gzip.py", line 468, in _read_gzip_header
+    last_mtime = _read_gzip_header(self._fp)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/gzip.py", line 430, in _read_gzip_header
+    (method, flag, last_mtime) = struct.unpack("<BBIxx", _read_exact(fp, 8))
+                                                         ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/Cellar/python@3.11/3.11.2_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/gzip.py", line 402, in _read_exact
+    def _read_exact(fp, n):
+    
+  File "/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/py_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 1634, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-01-04T01:17:00.813+0100] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_with_minio_aws_s3_v01, task_id=task1, execution_date=20240103T231349, start_date=20240104T001647, end_date=20240104T001700
+[2024-01-04T01:17:00.849+0100] {standard_task_runner.py:104} ERROR - Failed to execute job 15251 for task task1 (Task received SIGTERM signal; 1136)

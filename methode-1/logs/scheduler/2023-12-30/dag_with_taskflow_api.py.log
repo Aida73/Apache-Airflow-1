@@ -1,0 +1,7 @@
+[2023-12-30T08:28:02.347+0100] {processor.py:157} INFO - Started process (PID=87727) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_with_taskflow_api.py
+[2023-12-30T08:28:02.351+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_with_taskflow_api.py for tasks to queue
+[2023-12-30T08:28:02.351+0100] {logging_mixin.py:154} INFO - [2023-12-30T08:28:02.351+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_with_taskflow_api.py
+[2023-12-30T08:28:02.415+0100] {processor.py:839} INFO - DAG(s) dict_keys(['dag_with_taskflow_api_v02']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_with_taskflow_api.py
+[2023-12-30T08:28:02.629+0100] {logging_mixin.py:154} INFO - [2023-12-30T08:28:02.629+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-30T08:28:02.654+0100] {logging_mixin.py:154} INFO - [2023-12-30T08:28:02.653+0100] {dag.py:3722} INFO - Setting next_dagrun for dag_with_taskflow_api_v02 to 2023-12-30T00:00:00+00:00, run_after=2023-12-31T00:00:00+00:00
+[2023-12-30T08:28:02.673+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_with_taskflow_api.py took 0.327 seconds

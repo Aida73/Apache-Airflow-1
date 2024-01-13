@@ -1,0 +1,13 @@
+[2023-12-28T21:27:58.018+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_taskflow_api_v02.get_name scheduled__2022-05-16T00:00:00+00:00 [queued]>
+[2023-12-28T21:27:58.032+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_taskflow_api_v02.get_name scheduled__2022-05-16T00:00:00+00:00 [queued]>
+[2023-12-28T21:27:58.040+0100] {taskinstance.py:1361} INFO - Starting attempt 1 of 6
+[2023-12-28T21:27:58.086+0100] {taskinstance.py:1382} INFO - Executing <Task(_PythonDecoratedOperator): get_name> on 2022-05-16 00:00:00+00:00
+[2023-12-28T21:27:58.089+0100] {standard_task_runner.py:57} INFO - Started process 72884 to run task
+[2023-12-28T21:27:58.096+0100] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'dag_with_taskflow_api_v02', 'get_name', 'scheduled__2022-05-16T00:00:00+00:00', '--job-id', '4306', '--raw', '--subdir', '/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_with_taskflow_api.py', '--cfg-path', '/var/folders/gn/cr4yj18d1tv34pkws9v_kq1r0000gn/T/tmpy7r6q3vs']
+[2023-12-28T21:27:58.101+0100] {standard_task_runner.py:85} INFO - Job 4306: Subtask get_name
+[2023-12-28T21:27:58.149+0100] {task_command.py:416} INFO - Running <TaskInstance: dag_with_taskflow_api_v02.get_name scheduled__2022-05-16T00:00:00+00:00 [running]> on host macbook-pro-de-user.local
+[2023-12-28T21:27:58.754+0100] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='aida' AIRFLOW_CTX_DAG_ID='dag_with_taskflow_api_v02' AIRFLOW_CTX_TASK_ID='get_name' AIRFLOW_CTX_EXECUTION_DATE='2022-05-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-05-16T00:00:00+00:00'
+[2023-12-28T21:27:58.756+0100] {python.py:194} INFO - Done. Returned value was: {'first_name': 'Muhammad', 'last_name': "Ibn'Abdallah"}
+[2023-12-28T21:27:58.786+0100] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=dag_with_taskflow_api_v02, task_id=get_name, execution_date=20220516T000000, start_date=20231228T202758, end_date=20231228T202758
+[2023-12-28T21:27:58.842+0100] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-28T21:27:58.864+0100] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

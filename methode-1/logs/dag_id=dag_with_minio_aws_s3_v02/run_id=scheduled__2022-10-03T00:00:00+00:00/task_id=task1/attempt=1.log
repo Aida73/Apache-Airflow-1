@@ -1,0 +1,18 @@
+[2024-01-02T21:59:20.077+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_with_minio_aws_s3_v02.task1 scheduled__2022-10-03T00:00:00+00:00 [queued]>
+[2024-01-02T21:59:20.102+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_with_minio_aws_s3_v02.task1 scheduled__2022-10-03T00:00:00+00:00 [queued]>
+[2024-01-02T21:59:20.103+0100] {taskinstance.py:1361} INFO - Starting attempt 1 of 6
+[2024-01-02T21:59:20.150+0100] {taskinstance.py:1382} INFO - Executing <Task(S3KeySensor): task1> on 2022-10-03 00:00:00+00:00
+[2024-01-02T21:59:20.155+0100] {standard_task_runner.py:57} INFO - Started process 89781 to run task
+[2024-01-02T21:59:20.165+0100] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'dag_with_minio_aws_s3_v02', 'task1', 'scheduled__2022-10-03T00:00:00+00:00', '--job-id', '15179', '--raw', '--subdir', '/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/dag_minio_s3.py', '--cfg-path', '/var/folders/gn/cr4yj18d1tv34pkws9v_kq1r0000gn/T/tmptwxjs3dp']
+[2024-01-02T21:59:20.171+0100] {standard_task_runner.py:85} INFO - Job 15179: Subtask task1
+[2024-01-02T21:59:20.261+0100] {task_command.py:416} INFO - Running <TaskInstance: dag_with_minio_aws_s3_v02.task1 scheduled__2022-10-03T00:00:00+00:00 [running]> on host macbook-pro-de-user.local
+[2024-01-02T21:59:21.259+0100] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='aida' AIRFLOW_CTX_DAG_ID='dag_with_minio_aws_s3_v02' AIRFLOW_CTX_TASK_ID='task1' AIRFLOW_CTX_EXECUTION_DATE='2022-10-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-10-03T00:00:00+00:00'
+[2024-01-02T21:59:21.261+0100] {s3.py:106} INFO - Poking for key : s3://airflow/data.csv
+[2024-01-02T21:59:21.272+0100] {base.py:73} INFO - Using connection ID 'minio_conn' for task execution.
+[2024-01-02T21:59:21.274+0100] {connection_wrapper.py:378} INFO - AWS Connection (conn_id='minio_conn', conn_type='aws') credentials retrieved from login and password.
+[2024-01-02T21:59:21.283+0100] {logging_mixin.py:154} WARNING - <string>:9 AirflowProviderDeprecationWarning: extra['host'] is deprecated and will be removed in a future release. Please set extra['endpoint_url'] instead
+[2024-01-02T22:08:07.683+0100] {process_utils.py:131} INFO - Sending 15 to group 89781. PIDs of all processes in the group: [89781]
+[2024-01-02T22:08:07.717+0100] {process_utils.py:86} INFO - Sending the signal 15 to group 89781
+[2024-01-02T22:08:29.114+0100] {taskinstance.py:1149} INFO - Dependencies not met for <TaskInstance: dag_with_minio_aws_s3_v02.task1 scheduled__2022-10-03T00:00:00+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2024-01-02T22:08:29.132+0100] {taskinstance.py:1149} INFO - Dependencies not met for <TaskInstance: dag_with_minio_aws_s3_v02.task1 scheduled__2022-10-03T00:00:00+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2024-01-02T22:08:29.134+0100] {local_task_job_runner.py:154} INFO - Task is not able to be run

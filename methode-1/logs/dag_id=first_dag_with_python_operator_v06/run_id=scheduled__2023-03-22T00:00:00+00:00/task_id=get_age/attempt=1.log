@@ -1,0 +1,13 @@
+[2023-12-29T15:05:33.919+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: first_dag_with_python_operator_v06.get_age scheduled__2023-03-22T00:00:00+00:00 [queued]>
+[2023-12-29T15:05:33.930+0100] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: first_dag_with_python_operator_v06.get_age scheduled__2023-03-22T00:00:00+00:00 [queued]>
+[2023-12-29T15:05:33.931+0100] {taskinstance.py:1361} INFO - Starting attempt 1 of 1
+[2023-12-29T15:05:33.994+0100] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): get_age> on 2023-03-22 00:00:00+00:00
+[2023-12-29T15:05:33.999+0100] {standard_task_runner.py:57} INFO - Started process 92340 to run task
+[2023-12-29T15:05:34.007+0100] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'first_dag_with_python_operator_v06', 'get_age', 'scheduled__2023-03-22T00:00:00+00:00', '--job-id', '8202', '--raw', '--subdir', '/Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/first_dag_with_python_operator.py', '--cfg-path', '/var/folders/gn/cr4yj18d1tv34pkws9v_kq1r0000gn/T/tmpsxogti4x']
+[2023-12-29T15:05:34.025+0100] {standard_task_runner.py:85} INFO - Job 8202: Subtask get_age
+[2023-12-29T15:05:34.127+0100] {task_command.py:416} INFO - Running <TaskInstance: first_dag_with_python_operator_v06.get_age scheduled__2023-03-22T00:00:00+00:00 [running]> on host macbook-pro-de-user.local
+[2023-12-29T15:05:35.098+0100] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='aidasow' AIRFLOW_CTX_DAG_ID='first_dag_with_python_operator_v06' AIRFLOW_CTX_TASK_ID='get_age' AIRFLOW_CTX_EXECUTION_DATE='2023-03-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-03-22T00:00:00+00:00'
+[2023-12-29T15:05:35.121+0100] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-29T15:05:35.129+0100] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=first_dag_with_python_operator_v06, task_id=get_age, execution_date=20230322T000000, start_date=20231229T140533, end_date=20231229T140535
+[2023-12-29T15:05:35.215+0100] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-29T15:05:35.287+0100] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

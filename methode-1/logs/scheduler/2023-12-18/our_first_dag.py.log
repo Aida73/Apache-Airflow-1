@@ -1,0 +1,205 @@
+[2023-12-18T23:24:49.726+0100] {processor.py:157} INFO - Started process (PID=46693) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:24:49.729+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:24:49.730+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:24:49.729+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:24:49.761+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:24:50.345+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:24:50.345+0100] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-18T23:24:50.352+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:24:50.352+0100] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-18T23:24:50.357+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:24:50.357+0100] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-18T23:24:50.357+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:24:50.357+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:24:50.368+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:24:50.368+0100] {dag.py:2963} INFO - Creating ORM DAG for our_first_dag
+[2023-12-18T23:24:50.378+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:24:50.377+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:24:50.395+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.670 seconds
+[2023-12-18T23:25:22.529+0100] {processor.py:157} INFO - Started process (PID=46988) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:25:22.533+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:25:22.534+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:25:22.534+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:25:22.586+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:25:22.827+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:25:22.826+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:25:22.845+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:25:22.845+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:25:22.864+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.336 seconds
+[2023-12-18T23:25:55.300+0100] {processor.py:157} INFO - Started process (PID=47211) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:25:55.305+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:25:55.305+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:25:55.305+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:25:55.349+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:25:55.581+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:25:55.581+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:25:55.598+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:25:55.598+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:25:55.616+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.316 seconds
+[2023-12-18T23:26:27.818+0100] {processor.py:157} INFO - Started process (PID=47316) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:26:27.822+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:26:27.823+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:26:27.822+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:26:27.862+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:26:28.107+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:26:28.107+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:26:28.130+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:26:28.129+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:26:28.151+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.335 seconds
+[2023-12-18T23:27:00.297+0100] {processor.py:157} INFO - Started process (PID=47437) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:27:00.301+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:27:00.302+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:27:00.302+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:27:00.339+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:27:00.559+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:27:00.559+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:27:00.578+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:27:00.578+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:27:00.597+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.301 seconds
+[2023-12-18T23:27:09.202+0100] {processor.py:157} INFO - Started process (PID=47544) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:27:09.208+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:27:09.209+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:27:09.209+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:27:09.272+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:27:10.579+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:27:10.578+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:27:10.611+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:27:10.610+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:27:10.640+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 1.439 seconds
+[2023-12-18T23:27:42.883+0100] {processor.py:157} INFO - Started process (PID=47563) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:27:42.888+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:27:42.888+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:27:42.888+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:27:42.930+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:27:43.177+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:27:43.177+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:27:43.199+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:27:43.198+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:27:43.221+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.339 seconds
+[2023-12-18T23:28:15.037+0100] {processor.py:157} INFO - Started process (PID=47844) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:28:15.041+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:28:15.042+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:28:15.042+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:28:15.079+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:28:15.292+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:28:15.292+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:28:15.307+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:28:15.307+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:28:15.325+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.289 seconds
+[2023-12-18T23:28:20.178+0100] {processor.py:157} INFO - Started process (PID=47936) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:28:20.182+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:28:20.183+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:28:20.182+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:28:20.223+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v2']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:28:21.212+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:28:21.211+0100] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-18T23:28:21.220+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:28:21.220+0100] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-18T23:28:21.225+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:28:21.225+0100] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-18T23:28:21.226+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:28:21.226+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:28:21.237+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:28:21.236+0100] {dag.py:2963} INFO - Creating ORM DAG for our_first_dag_v2
+[2023-12-18T23:28:21.245+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:28:21.245+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v2 to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:28:21.261+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 1.084 seconds
+[2023-12-18T23:28:53.562+0100] {processor.py:157} INFO - Started process (PID=48234) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:28:53.566+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:28:53.567+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:28:53.567+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:28:53.611+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v2']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:28:53.874+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:28:53.874+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:28:53.897+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:28:53.897+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v2 to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:28:53.922+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.360 seconds
+[2023-12-18T23:29:29.139+0100] {processor.py:157} INFO - Started process (PID=48450) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:29:29.145+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:29:29.146+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:29:29.146+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:29:29.199+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v2']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:29:29.525+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:29:29.524+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:29:29.553+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:29:29.552+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v2 to 2021-07-31T00:00:00+00:00, run_after=2021-08-01T00:00:00+00:00
+[2023-12-18T23:29:29.574+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.436 seconds
+[2023-12-18T23:30:07.125+0100] {processor.py:157} INFO - Started process (PID=48628) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:30:07.132+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:30:07.133+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:30:07.133+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:30:07.177+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v2']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:30:07.510+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:30:07.510+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:30:07.535+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:30:07.534+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v2 to 2021-08-05T00:00:00+00:00, run_after=2021-08-06T00:00:00+00:00
+[2023-12-18T23:30:07.560+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.437 seconds
+[2023-12-18T23:30:51.139+0100] {processor.py:157} INFO - Started process (PID=48899) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:30:51.154+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:30:51.155+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:30:51.155+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:30:51.231+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v2']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:30:52.272+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:30:52.271+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:30:52.469+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:30:52.469+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v2 to 2021-08-08T00:00:00+00:00, run_after=2021-08-09T00:00:00+00:00
+[2023-12-18T23:30:52.521+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 1.383 seconds
+[2023-12-18T23:31:28.656+0100] {processor.py:157} INFO - Started process (PID=48947) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:31:28.707+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:31:28.724+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:31:28.723+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:31:29.271+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v2']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:31:30.384+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:31:30.383+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:31:30.436+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:31:30.436+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v2 to 2021-08-11T00:00:00+00:00, run_after=2021-08-12T00:00:00+00:00
+[2023-12-18T23:31:30.521+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 1.867 seconds
+[2023-12-18T23:32:10.372+0100] {processor.py:157} INFO - Started process (PID=49003) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:32:10.386+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:32:10.387+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:32:10.387+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:32:10.526+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v2']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:32:11.439+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:32:11.435+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:32:11.567+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:32:11.567+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v2 to 2021-08-12T00:00:00+00:00, run_after=2021-08-13T00:00:00+00:00
+[2023-12-18T23:32:11.665+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 1.295 seconds
+[2023-12-18T23:32:30.769+0100] {processor.py:157} INFO - Started process (PID=49020) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:32:30.774+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:32:30.775+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:32:30.775+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:32:30.838+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v3']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:32:32.577+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:32:32.577+0100] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-18T23:32:32.601+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:32:32.601+0100] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-18T23:32:32.618+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:32:32.618+0100] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-18T23:32:32.619+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:32:32.618+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:32:32.643+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:32:32.642+0100] {dag.py:2963} INFO - Creating ORM DAG for our_first_dag_v3
+[2023-12-18T23:32:32.667+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:32:32.666+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v3 to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:32:32.716+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 1.948 seconds
+[2023-12-18T23:33:07.785+0100] {processor.py:157} INFO - Started process (PID=49069) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:33:07.815+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:33:07.817+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:33:07.816+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:33:08.034+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v3']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:33:08.823+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:33:08.822+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:33:08.873+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:33:08.873+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v3 to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:33:08.998+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 1.214 seconds
+[2023-12-18T23:33:44.289+0100] {processor.py:157} INFO - Started process (PID=49110) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:33:44.298+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:33:44.300+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:33:44.299+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:33:44.370+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v3']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:33:44.823+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:33:44.822+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:33:44.851+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:33:44.851+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v3 to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:33:44.884+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.596 seconds
+[2023-12-18T23:34:09.922+0100] {processor.py:157} INFO - Started process (PID=49117) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:34:09.928+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:34:09.928+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:34:09.928+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:34:10.036+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v4']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:34:11.578+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:34:11.577+0100] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-18T23:34:11.596+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:34:11.595+0100] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-18T23:34:11.610+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:34:11.610+0100] {manager.py:499} INFO - Created Permission View: %s
+[2023-12-18T23:34:11.611+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:34:11.610+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:34:11.632+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:34:11.630+0100] {dag.py:2963} INFO - Creating ORM DAG for our_first_dag_v4
+[2023-12-18T23:34:11.653+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:34:11.653+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v4 to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:34:11.693+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 1.772 seconds
+[2023-12-18T23:34:47.817+0100] {processor.py:157} INFO - Started process (PID=49425) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:34:47.828+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:34:47.829+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:34:47.829+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:34:47.918+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v4']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:34:48.384+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:34:48.383+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:34:48.422+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:34:48.421+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v4 to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:34:48.487+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.672 seconds
+[2023-12-18T23:35:22.452+0100] {processor.py:157} INFO - Started process (PID=49839) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:35:22.457+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:35:22.458+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:35:22.458+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:35:22.550+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v4']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:35:23.017+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:35:23.016+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:35:23.062+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:35:23.062+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v4 to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:35:23.103+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.651 seconds
+[2023-12-18T23:35:56.601+0100] {processor.py:157} INFO - Started process (PID=50150) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:35:56.623+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:35:56.624+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:35:56.624+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:35:56.731+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v4']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:35:57.000+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:35:57.000+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:35:57.023+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:35:57.023+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v4 to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:35:57.044+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.443 seconds
+[2023-12-18T23:36:29.555+0100] {processor.py:157} INFO - Started process (PID=50451) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:36:29.564+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:36:29.565+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:36:29.565+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:36:29.620+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v4']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:36:30.310+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:36:30.309+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:36:30.398+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:36:30.397+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v4 to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:36:30.460+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.906 seconds
+[2023-12-18T23:37:04.293+0100] {processor.py:157} INFO - Started process (PID=50468) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:37:04.298+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:37:04.299+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:37:04.298+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:37:04.360+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v4']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:37:04.708+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:37:04.708+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:37:04.732+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:37:04.732+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v4 to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:37:04.808+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.516 seconds
+[2023-12-18T23:37:37.464+0100] {processor.py:157} INFO - Started process (PID=50490) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:37:37.472+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:37:37.473+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:37:37.473+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:37:37.528+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v4']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:37:37.847+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:37:37.846+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:37:37.869+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:37:37.869+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v4 to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:37:37.890+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.427 seconds
+[2023-12-18T23:38:09.222+0100] {processor.py:157} INFO - Started process (PID=50782) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:38:09.225+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:38:09.226+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:38:09.226+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:38:09.253+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v4']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:38:09.415+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:38:09.415+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:38:09.430+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:38:09.429+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v4 to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:38:09.446+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.224 seconds
+[2023-12-18T23:38:40.644+0100] {processor.py:157} INFO - Started process (PID=51071) to work on /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:38:40.649+0100] {processor.py:829} INFO - Processing file /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py for tasks to queue
+[2023-12-18T23:38:40.649+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:38:40.649+0100] {dagbag.py:536} INFO - Filling up the DagBag from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:38:40.677+0100] {processor.py:839} INFO - DAG(s) dict_keys(['our_first_dag_v4']) retrieved from /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py
+[2023-12-18T23:38:40.918+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:38:40.917+0100] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-18T23:38:40.934+0100] {logging_mixin.py:154} INFO - [2023-12-18T23:38:40.933+0100] {dag.py:3722} INFO - Setting next_dagrun for our_first_dag_v4 to 2021-07-30T00:00:00+00:00, run_after=2021-07-31T00:00:00+00:00
+[2023-12-18T23:38:40.955+0100] {processor.py:179} INFO - Processing /Users/user/Desktop/Learning/AIRFLOW-TUTORIAL/methode-1/dags/our_first_dag.py took 0.312 seconds
